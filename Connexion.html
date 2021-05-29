@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Main.css">
+    <script src="scripts/Sacs.js"></script>
+    <script src="scripts/Main.js"></script>
+    <title>Connectez-vous</title>
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    nav ul {
+      width: 100%;
+      background-color: rgba(44, 42, 39, 0.983);
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline-block;
+    }
+  
+    .home {
+      margin: 0 auto;
+      width: 50px;
+      float: right;
+    }
+  
+    .home a {
+      display: block;
+      text-decoration: none;
+      padding: 0;
+    }
+  
+    .dropdown {
+      position: relative;
+    }
+  
+    .dropdown-menu {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+  
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+  
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+  
+    .dropdown-menu:hover:not(.home) {
+      background-color: darkorange;
+      color: white;
+    }
+    p {
+      text-align: center;
+    }
+    .logo {
+        text-align: center;
+    }
+    #app {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #E6E6E6;
+    }
+    #app .column {
+        margin-top: 10%;
+    }
+    #app .column > p {
+        text-align: center;
+    }
+    #sign-up-button {
+        float: right;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <div class="dropdown-menu">A propos</div>
+                <div class="dropdown-content">
+                <a href="Apropos.html">CEO</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <div class="dropdown-menu">Sacs</div>
+                <div class="dropdown-content">
+                    <a href="Sacs.html">Sac à main</a>
+                    <a href="Sacs.html">Sac à dos</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <div class="dropdown-menu">Accessoires</div>
+                <div class="dropdown-content">
+                    <a href="Accessoires.html">Boucles d'oreiles</a>
+                    <a href="Accesoires.html">Bracelet</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <div class="dropdown-menu">Q&A</div>
+                <div class="dropdown-content">
+                  <a href="Q&A.html">Questions</a>
+                  <a href="Q&A.html">Messages</a>
+              </div>
+            </li>
+            <li class="home"><a href="questions.html"><img src="https://cdn.icon-icons.com/icons2/2428/PNG/512/kakaotalk_black_logo_icon_147117.png" width="46" height="46"></a></li>
+            <li class="home"><a href="paiement.html"><img src="https://cdn.w600.comps.canstockphoto.fr/lignes-bleu-isol%C3%A9-vide-panier-march%C3%A9-clipart-vectoris%C3%A9_csp68451510.jpg" width="46" height="46"></a></li>
+            <li class="home"><a href="connextion.html"><img src="https://image.shutterstock.com/image-vector/man-icon-vector-260nw-1167180799.jpg" width="46" height="46"></a></li>
+          </ul>
+    </nav>
+
+    <p>Le travail a des racines amères, mais des fruits sucrés.</p>
+
+    <div class="logo">
+    <a href="Main.html"><img src="https://png.pngtree.com/png-clipart/20200727/original/pngtree-logo-design-shoes-and-women-s-handbag-shop-png-image_5098370.jpg" width="200" height="200"></a>
+    </div>
+
+    <div class="columns is-mobile" id="app">
+        <!--centered column-->
+        <div class="column is-half is-offset-one-quarter">
+          <p class="title is-2 is-spaced">Connexion</p>
+          <!--login form-->
+          <div class="box">
+            <form>
+              <div class="field">
+                <p class="control has-icons-left">
+                  <input class="input" type="email" placeholder="Email">
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-envelope"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="field">
+                <p class="control has-icons-left">
+                  <input class="input" type="password" placeholder="Mot de passe">
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-lock"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="field">
+                <p class="control">
+                  <button class="button is-success" id="log-in-button">
+                    Je me connecte
+                  </button>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+     
+</body>
+</html>
